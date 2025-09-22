@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
+export const dynamic = "force-static";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
