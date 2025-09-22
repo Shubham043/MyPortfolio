@@ -28,7 +28,7 @@ const Clients = () => {
         <section id="testimonials" className="py-20 bg-black">
             <div className="flex flex-col items-center max-lg:mt-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-center mt-16 mb-10 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-white">
-                    Skills I'm Comfortable With
+                    Skills I&#39;m Comfortable With
                 </h2>
 
                 <div className="w-full max-w-6xl mx-auto px-4">
