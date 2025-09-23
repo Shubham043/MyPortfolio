@@ -3,7 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-
+import dynamic from "next/dynamic";
 const Hero = () => {
   const scrollToContent = () => {
       if (typeof window !== "undefined") {

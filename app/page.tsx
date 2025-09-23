@@ -1,7 +1,7 @@
 "use client";
-export const dynamic = "force-dynamic";
+export const dynamicSetting = "force-dynamic";
 import { navItems } from "@/data";
-
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
