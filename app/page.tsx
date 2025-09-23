@@ -1,15 +1,20 @@
 "use client";
 export const dynamicSetting = "force-dynamic";
+
 import { navItems } from "@/data";
 import dynamic from "next/dynamic";
-import Hero from "@/components/Hero";
+
+ 
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar"), { ssr: false });
+
+ 
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
   return (
@@ -22,6 +27,7 @@ const Home = () => {
         <Experience />
         <Approach />
         <Footer />
+        <FloatingNav /> 
       </div>
     </main>
   );
