@@ -5,12 +5,14 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
-    const scrollToContent = () => {
-        window.scrollTo({
-            top: window.innerHeight,
-            behavior: "smooth",
-        });
-    };
+  const scrollToContent = () => {
+      if (typeof window !== "undefined") {
+          window.scrollTo({
+              top: window.innerHeight,
+              behavior: "smooth",
+          });
+      }
+  };
 
     return (
         <div className="pb-20 pt-36 relative">
