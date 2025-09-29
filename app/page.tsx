@@ -17,7 +17,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <Hero />
         <Grid />
-        {<RecentProjects />
+        {/* <RecentProjects />
         <Clients />
         <Experience />
         <Approach />
